@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>map</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="js/jquery/dist/jquery.min.js"></script>
+  <script src="js/underscore/underscore.js"></script>
+  <script src="js/main.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD5dxvjk8etA__zFw9vD-knN11uVhg9PgM&sensor=TRUE_OR_FALSE"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="title">AAOO门店信息</div>
+    <div class="col-left">
+
+      <div class="filter">
+        <form action="" method="post" id="search-form">
+          <select id="country">
+            <option value>country</option>
+          </select>
+          <select id="city"></select>
+          <a href="#" class="btn btn-search">search</a>
+        </form>
+      </div>
+
+      <div class="search">
+        <div class="title">Search Result</div>
+        <div class="prompt"><span>0</span>Find Store(s)</div>
+        <div class="result">
+          <ul>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-right">
+      <div id="googleMap"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</body>
+</html>
